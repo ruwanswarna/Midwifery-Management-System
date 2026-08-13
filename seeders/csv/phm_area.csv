@@ -1,0 +1,61 @@
+phm_area_id,moh_area_id,phm_area_name,location
+1,1,Galle Town,Galle
+2,1,Fort,Fort
+3,1,Karapitiya,Karapitiya
+4,1,Mahamodara,Mahamodara
+5,1,Dadalla,Dadalla
+6,2,Bope,Bope
+7,2,Poddala,Poddala
+8,2,Akuratiya,Akuratiya
+9,2,Hiyare,Hiyare
+10,2,Labuduwa,Labuduwa
+11,3,Akmeemana North,Akmeemana
+12,3,Akmeemana South,Akmeemana
+13,3,Pinnaduwa,Pinnaduwa
+14,3,Kahaduwa,Kahaduwa
+15,3,Ihalagoda,Ihalagoda
+16,4,Baddegama Town,Baddegama
+17,4,Ginimellagaha,Ginimellagaha
+18,4,Hikkaduwa Inland,Hikkaduwa
+19,4,Wanduramba,Wanduramba
+20,4,Halpathota,Halpathota
+21,5,Balapitiya Town,Balapitiya
+22,5,Ahungalla,Ahungalla
+23,5,Maduganga,Maduganga
+24,5,Kosgoda,Kosgoda
+25,5,Pathirajawela,Pathirajawela
+26,6,Elpitiya Town,Elpitiya
+27,6,Pitigala,Pitigala
+28,6,Amugoda,Amugoda
+29,6,Nawadagala,Nawadagala
+30,6,Induruwa,Induruwa
+31,7,Habaraduwa Town,Habaraduwa
+32,7,Koggala,Koggala
+33,7,Thalpe,Thalpe
+34,7,Unawatuna,Unawatuna
+35,7,Heenatigala,Heenatigala
+36,8,Imaduwa Town,Imaduwa
+37,8,Yakkalamulla East,Yakkalamulla
+38,8,Poddala South,Poddala
+39,8,Pitigala East,Pitigala
+40,8,Udugama Road,Udugama
+41,9,Karandeniya Town,Karandeniya
+42,9,Uragaha,Uragaha
+43,9,Yakkalamulla West,Yakkalamulla
+44,9,Niyagama,Niyagama
+45,9,Kurundugahahetekma,Kurundugahahetekma
+46,10,Neluwa Town,Neluwa
+47,10,Kosmulla,Kosmulla
+48,10,Panangala,Panangala
+49,10,Deniyaya Border,Deniyaya
+50,10,Lankagama,Lankagama
+51,11,Rathgama Town,Rathgama
+52,11,Dodanduwa,Dodanduwa
+53,11,Kahawa,Kahawa
+54,11,Boossa,Boossa
+55,11,Pitiwella,Pitiwella
+56,12,Yakkalamulla Town,Yakkalamulla
+57,12,Kottawa,Kottawa
+58,12,Ampegama,Ampegama
+59,12,Udugama East,Udugama
+60,12,Nagoda Border,Nagoda

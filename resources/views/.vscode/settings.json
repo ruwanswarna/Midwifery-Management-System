@@ -1,0 +1,10 @@
+{
+	"files.exclude": {
+		"**/auth": true,
+		"**/errors": true,
+		"**/layouts": true,
+		"**/reports": true,
+		
+	},
+	"editor.glyphMargin": false
+}

@@ -1,0 +1,21 @@
+milestone_id,milestone_name,milestone_category,expected_age_from_month,expected_age_to_month,description,is_active
+1,Social Smile,Social,2,3,Responds with social smile,1
+2,Head Control,Gross Motor,3,4,Holds head steady,1
+3,Rolls Over,Gross Motor,4,6,Rolls from tummy to back,1
+4,Sits Without Support,Gross Motor,6,8,Sits independently,1
+5,Crawls,Gross Motor,7,10,Crawls forward,1
+6,Pulls to Stand,Gross Motor,9,11,Pulls up using furniture,1
+7,Walks Independently,Gross Motor,12,18,Walks without support,1
+8,Runs,Gross Motor,18,24,Runs steadily,1
+9,Pincer Grasp,Fine Motor,8,10,Picks objects using thumb and finger,1
+10,Transfers Objects,Fine Motor,6,8,Transfers toy between hands,1
+11,Stacks Two Blocks,Fine Motor,15,18,Stacks two cubes,1
+12,Stacks Six Blocks,Fine Motor,24,30,Builds tower of six cubes,1
+13,Babbles,Language,6,9,Repeats sounds,1
+14,Says Mama/Dada,Language,9,12,Says meaningful words,1
+15,Speaks Two Words,Language,12,18,Uses two-word phrases,1
+16,Speaks Simple Sentences,Language,24,36,Uses simple sentences,1
+17,Recognizes Parents,Social,4,6,Recognizes familiar caregivers,1
+18,Waves Goodbye,Social,9,12,Waves on request,1
+19,Feeds Self,Social,12,18,Eats using spoon or fingers,1
+20,Pretend Play,Cognitive,24,36,Engages in imaginative play,1

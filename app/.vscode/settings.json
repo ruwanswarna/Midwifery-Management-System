@@ -1,0 +1,19 @@
+{
+	"files.exclude": {
+		"**/Exceptions": true,
+		"**/helpers": true,
+		"**/Middleware": true,
+		"**/logs": true,
+		//sub folders - Navigation
+		"**/Navigation/admin": true,
+		"**/Navigation/paren": true,
+
+		//sub folders - Core
+		"**/Core/Redirect.php": true,
+		"**/Core/Router.php": true,
+		"**/Core/Session.php": true,
+		"**/Core/Validator.php": true,
+		"**/Core/View.php": true
+	},
+	"editor.glyphMargin": false
+}

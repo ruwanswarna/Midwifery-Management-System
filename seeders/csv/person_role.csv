@@ -1,0 +1,8 @@
+person_role_id,role_name,description
+1,Mother,Registered mother
+2,Father,Father of child
+3,Child,Registered child
+4,Guardian,Legal guardian
+5,Grandparent,Grandparent
+6,Sibling,Brother or sister
+7,Other Family,Other family member

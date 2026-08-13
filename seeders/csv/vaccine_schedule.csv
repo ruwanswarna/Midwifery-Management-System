@@ -1,0 +1,15 @@
+schedule_id,vaccine_id,dose_number,recommended_age_months,description
+1,1,1,0,At Birth
+2,2,1,2,2 Months
+3,3,1,2,2 Months
+4,4,1,2,2 Months
+5,2,2,4,4 Months
+6,3,2,4,4 Months
+7,2,3,6,6 Months
+8,3,3,6,6 Months
+9,4,2,4,4 Months
+10,5,1,9,9 Months
+11,6,1,12,12 Months
+12,5,2,36,3 Years
+13,7,1,18,18 Months
+14,8,1,120,School Programme

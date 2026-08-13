@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Controllers"
+		},
+		{
+			"path": "../Modules"
+		}
+	],
+	"settings": {}
+}

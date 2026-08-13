@@ -1,0 +1,11 @@
+<?php $person = $mother;
+$recipientType = 'Pregnant Mother';
+$distributions = $distributions ?? [];
+$pageIntro = 'Maternal supplement history for ' . $mother['full_name'] . '.';
+$pageActions = [['label' => 'Record Distribution', 'url' => '/mothers/' . $mother['person_id'] . '/supplements/create', 'primary' => true]];
+$summaryCards = [['label' => 'Distributions', 'value' => count($distributions)], ['label' => 'Due Soon', 'value' => count(array_filter($distributions, static fn($r) => !empty($r['next_distribution_due']) && $r['next_distribution_due'] >= date('Y-m-d')))], ['label' => 'Overdue', 'value' => count(array_filter($distributions, static fn($r) => !empty($r['next_distribution_due']) && $r['next_distribution_due'] < date('Y-m-d')))], ['label' => 'Recipient Type', 'value' => $distributions[0]['recipient_type'] ?? 'Maternal']];
+$tableColumns = ['Supplement', 'Quantity', 'Distributed', 'Next Due', 'Recorded By', 'Remarks'];
+$tableRows = array_map(static fn($r) => [$r['supplement_name'], $r['quantity'] . ' ' . $r['unit'], $r['distribution_date'], $r['next_distribution_due'] ?? '—', $r['staff_name'] ?? $r['distributed_by_name'] ?? '—', $r['remarks'] ?? '—'], $distributions);
+$emptyTitle = 'No supplement distributions';
+$emptyMessage = 'Record the first maternal supplement distribution.';
+require ROOT_PATH . '/resources/views/partials/module-page.php';

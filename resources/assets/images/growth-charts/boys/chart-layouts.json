@@ -1,0 +1,238 @@
+{
+  "source": "9789241595070_BoysGrowth_eng.pdf",
+  "backgroundPixelSize": {
+    "width": 3200,
+    "height": 2200
+  },
+  "backgroundsContain": "WHO grid and z-score curves only; Chart.js supplies axes and labels",
+  "charts": {
+    "length_for_age_0_6m": {
+      "title": "Length-for-age BOYS, birth to 6 months",
+      "sourcePdfPage": 31,
+      "sourcePrintedPage": 29,
+      "background": "backgrounds/length_for_age_0_6m_background.png",
+      "fullChart": "full_charts_600dpi/length_for_age_0_6m_full_300dpi.png",
+      "x": {
+        "measure": "ageMonths",
+        "min": 0,
+        "max": 6,
+        "unit": "month"
+      },
+      "y": {
+        "measure": "length",
+        "min": 43.0,
+        "max": 74.7,
+        "unit": "cm"
+      }
+    },
+    "weight_for_age_0_6m": {
+      "title": "Weight-for-age BOYS, birth to 6 months",
+      "sourcePdfPage": 32,
+      "sourcePrintedPage": 30,
+      "background": "backgrounds/weight_for_age_0_6m_background.png",
+      "fullChart": "full_charts_600dpi/weight_for_age_0_6m_full_300dpi.png",
+      "x": {
+        "measure": "ageMonths",
+        "min": 0,
+        "max": 6,
+        "unit": "month"
+      },
+      "y": {
+        "measure": "weight",
+        "min": 2,
+        "max": 11,
+        "unit": "kg"
+      }
+    },
+    "weight_for_length_0_6m": {
+      "title": "Weight-for-length BOYS, birth to 6 months",
+      "sourcePdfPage": 33,
+      "sourcePrintedPage": 31,
+      "background": "backgrounds/weight_for_length_0_6m_background.png",
+      "fullChart": "full_charts_600dpi/weight_for_length_0_6m_full_300dpi.png",
+      "x": {
+        "measure": "length",
+        "min": 45,
+        "max": 80,
+        "unit": "cm"
+      },
+      "y": {
+        "measure": "weight",
+        "min": 1.5,
+        "max": 14,
+        "unit": "kg"
+      }
+    },
+    "bmi_for_age_0_6m": {
+      "title": "BMI-for-age BOYS, birth to 6 months",
+      "sourcePdfPage": 34,
+      "sourcePrintedPage": 32,
+      "background": "backgrounds/bmi_for_age_0_6m_background.png",
+      "fullChart": "full_charts_600dpi/bmi_for_age_0_6m_full_300dpi.png",
+      "x": {
+        "measure": "ageMonths",
+        "min": 0,
+        "max": 6,
+        "unit": "month"
+      },
+      "y": {
+        "measure": "bmi",
+        "min": 9.2,
+        "max": 22.8,
+        "unit": "kg/m2"
+      }
+    },
+    "length_for_age_6_24m": {
+      "title": "Length-for-age BOYS, 6 months to 2 years",
+      "sourcePdfPage": 35,
+      "sourcePrintedPage": 33,
+      "background": "backgrounds/length_for_age_6_24m_background.png",
+      "fullChart": "full_charts_600dpi/length_for_age_6_24m_full_300dpi.png",
+      "x": {
+        "measure": "ageMonths",
+        "min": 6,
+        "max": 24,
+        "unit": "month"
+      },
+      "y": {
+        "measure": "length",
+        "min": 60,
+        "max": 98.4,
+        "unit": "cm"
+      }
+    },
+    "weight_for_age_6_24m": {
+      "title": "Weight-for-age BOYS, 6 months to 2 years",
+      "sourcePdfPage": 36,
+      "sourcePrintedPage": 34,
+      "background": "backgrounds/weight_for_age_6_24m_background.png",
+      "fullChart": "full_charts_600dpi/weight_for_age_6_24m_full_300dpi.png",
+      "x": {
+        "measure": "ageMonths",
+        "min": 6,
+        "max": 24,
+        "unit": "month"
+      },
+      "y": {
+        "measure": "weight",
+        "min": 6,
+        "max": 17,
+        "unit": "kg"
+      }
+    },
+    "weight_for_length_0_24m": {
+      "title": "Weight-for-length BOYS, birth to 2 years",
+      "sourcePdfPage": 37,
+      "sourcePrintedPage": 35,
+      "background": "backgrounds/weight_for_length_0_24m_background.png",
+      "fullChart": "full_charts_600dpi/weight_for_length_0_24m_full_300dpi.png",
+      "x": {
+        "measure": "length",
+        "min": 45,
+        "max": 110,
+        "unit": "cm"
+      },
+      "y": {
+        "measure": "weight",
+        "min": 2,
+        "max": 24,
+        "unit": "kg"
+      }
+    },
+    "bmi_for_age_6_24m": {
+      "title": "BMI-for-age BOYS, 6 months to 2 years",
+      "sourcePdfPage": 38,
+      "sourcePrintedPage": 36,
+      "background": "backgrounds/bmi_for_age_6_24m_background.png",
+      "fullChart": "full_charts_600dpi/bmi_for_age_6_24m_full_300dpi.png",
+      "x": {
+        "measure": "ageMonths",
+        "min": 6,
+        "max": 24,
+        "unit": "month"
+      },
+      "y": {
+        "measure": "bmi",
+        "min": 12.3,
+        "max": 22.8,
+        "unit": "kg/m2"
+      }
+    },
+    "height_for_age_24_60m": {
+      "title": "Height-for-age BOYS, 2 to 5 years",
+      "sourcePdfPage": 39,
+      "sourcePrintedPage": 37,
+      "background": "backgrounds/height_for_age_24_60m_background.png",
+      "fullChart": "full_charts_600dpi/height_for_age_24_60m_full_300dpi.png",
+      "x": {
+        "measure": "ageMonths",
+        "min": 24,
+        "max": 60,
+        "unit": "month"
+      },
+      "y": {
+        "measure": "height",
+        "min": 76.2,
+        "max": 125,
+        "unit": "cm"
+      }
+    },
+    "weight_for_age_24_60m": {
+      "title": "Weight-for-age BOYS, 2 to 5 years",
+      "sourcePdfPage": 40,
+      "sourcePrintedPage": 38,
+      "background": "backgrounds/weight_for_age_24_60m_background.png",
+      "fullChart": "full_charts_600dpi/weight_for_age_24_60m_full_300dpi.png",
+      "x": {
+        "measure": "ageMonths",
+        "min": 24,
+        "max": 60,
+        "unit": "month"
+      },
+      "y": {
+        "measure": "weight",
+        "min": 8,
+        "max": 28,
+        "unit": "kg"
+      }
+    },
+    "weight_for_height_24_60m": {
+      "title": "Weight-for-height BOYS, 2 to 5 years",
+      "sourcePdfPage": 41,
+      "sourcePrintedPage": 39,
+      "background": "backgrounds/weight_for_height_24_60m_background.png",
+      "fullChart": "full_charts_600dpi/weight_for_height_24_60m_full_300dpi.png",
+      "x": {
+        "measure": "height",
+        "min": 65,
+        "max": 120,
+        "unit": "cm"
+      },
+      "y": {
+        "measure": "weight",
+        "min": 6,
+        "max": 30,
+        "unit": "kg"
+      }
+    },
+    "bmi_for_age_24_60m": {
+      "title": "BMI-for-age BOYS, 2 to 5 years",
+      "sourcePdfPage": 42,
+      "sourcePrintedPage": 40,
+      "background": "backgrounds/bmi_for_age_24_60m_background.png",
+      "fullChart": "full_charts_600dpi/bmi_for_age_24_60m_full_300dpi.png",
+      "x": {
+        "measure": "ageMonths",
+        "min": 24,
+        "max": 60,
+        "unit": "month"
+      },
+      "y": {
+        "measure": "bmi",
+        "min": 11.7,
+        "max": 21,
+        "unit": "kg/m2"
+      }
+    }
+  }
+}

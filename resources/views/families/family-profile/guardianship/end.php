@@ -1,0 +1,1 @@
+<div class="rounded-xl border border-slate-200 bg-white p-8 text-center shadow-sm"><h2 class="text-lg font-semibold text-slate-900">End guardian designation</h2><p class="mt-2 text-sm text-slate-500">Confirm this action from the guardianship list. Historical child-specific assignments cannot be stored by the current schema.</p></div>

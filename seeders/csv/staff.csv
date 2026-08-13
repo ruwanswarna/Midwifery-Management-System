@@ -1,0 +1,43 @@
+staff_id,employee_number,moh_area_id,phm_area_id,first_name,middle_name,last_name,designation,phone,email,registration_number,date_joined,status
+1,MOH0001,1,,Ajith,,Perera,MOH,0777123001,ajith.perera@moms.lk,SLMC10001,2017-01-10,Active
+2,MOH0002,2,,Nimal,,Silva,MOH,0777123002,nimal.silva@moms.lk,SLMC10002,2018-03-12,Active
+3,MOH0003,3,,Ruwan,,Fernando,MOH,0777123003,ruwan.fernando@moms.lk,SLMC10003,2019-05-20,Active
+4,MOH0004,4,,Saman,,Wijesinghe,MOH,0777123004,saman.wijesinghe@moms.lk,SLMC10004,2016-08-15,Active
+5,MOH0005,5,,Chaminda,,Gunasekara,MOH,0777123005,chaminda.gunasekara@moms.lk,SLMC10005,2015-11-02,Active
+6,PHNS0001,1,,Nilmini,,Jayawardena,PHNS,0777224001,nilmini.jayawardena@moms.lk,NMC20001,2018-01-08,Active
+7,PHNS0002,2,,Anoma,,Peris,PHNS,0777224002,anoma.peris@moms.lk,NMC20002,2017-06-18,Active
+8,PHNS0003,3,,Deepika,,Dias,PHNS,0777224003,deepika.dias@moms.lk,NMC20003,2019-02-11,Active
+9,PHNS0004,4,,Kumari,,Ranasinghe,PHNS,0777224004,kumari.ranasinghe@moms.lk,NMC20004,2016-12-05,Active
+10,PHNS0005,5,,Malini,,Abeysekera,PHNS,0777224005,malini.abeysekera@moms.lk,NMC20005,2020-01-10,Active
+11,PHM0001,1,1,Nadeeka,,Perera,PHM,0777310001,nadeeka.perera@moms.lk,PHM30001,2021-01-15,Active
+12,PHM0002,1,2,Dilani,,Silva,PHM,0777310002,dilani.silva@moms.lk,PHM30002,2020-04-20,Active
+13,PHM0003,1,3,Tharushi,,Fernando,PHM,0777310003,tharushi.fernando@moms.lk,PHM30003,2019-09-10,Active
+14,PHM0004,1,4,Ishani,,Gunawardena,PHM,0777310004,ishani.gunawardena@moms.lk,PHM30004,2022-02-14,Active
+15,PHM0005,1,5,Chathurika,,Perera,PHM,0777310005,chathurika.perera@moms.lk,PHM30005,2018-07-01,Active
+16,PHM0006,2,6,Nirosha,,Silva,PHM,0777310006,nirosha.silva@moms.lk,PHM30006,2020-03-01,Active
+17,PHM0007,2,7,Lasanthi,,Dias,PHM,0777310007,lasanthi.dias@moms.lk,PHM30007,2019-11-22,Active
+18,PHM0008,2,8,Upeksha,,Perera,PHM,0777310008,upeksha.perera@moms.lk,PHM30008,2021-05-17,Active
+19,PHM0009,2,9,Sandamali,,Fernando,PHM,0777310009,sandamali.fernando@moms.lk,PHM30009,2018-08-06,Active
+20,PHM0010,2,10,Pabasari,,Silva,PHM,0777310010,pabasari.silva@moms.lk,PHM30010,2017-12-18,Active
+21,PHM0011,3,11,Hiruni,,Perera,PHM,0777310011,hiruni.perera@moms.lk,PHM30011,2019-06-30,Active
+22,PHM0012,3,12,Dinushi,,Karunaratne,PHM,0777310012,dinushi.karunaratne@moms.lk,PHM30012,2021-01-05,Active
+23,PHM0013,3,13,Harshani,,Silva,PHM,0777310013,harshani.silva@moms.lk,PHM30013,2018-05-21,Active
+24,PHM0014,3,14,Rashmi,,Perera,PHM,0777310014,rashmi.perera@moms.lk,PHM30014,2020-10-10,Active
+25,PHM0015,3,15,Sachini,,Jayasinghe,PHM,0777310015,sachini.jayasinghe@moms.lk,PHM30015,2017-09-19,Active
+26,PHM0016,4,16,Madhavi,,Fernando,PHM,0777310016,madhavi.fernando@moms.lk,PHM30016,2022-04-11,Active
+27,PHM0017,4,17,Nayani,,Silva,PHM,0777310017,nayani.silva@moms.lk,PHM30017,2019-08-28,Active
+28,PHM0018,4,18,Pradeepika,,Perera,PHM,0777310018,pradeepika.perera@moms.lk,PHM30018,2018-11-15,Active
+29,PHM0019,4,19,Supuni,,Dias,PHM,0777310019,supuni.dias@moms.lk,PHM30019,2020-07-02,Active
+30,PHM0020,4,20,Kaushalya,,Gunasekara,PHM,0777310020,kaushalya.gunasekara@moms.lk,PHM30020,2021-09-12,Active
+31,PHM0021,5,21,Thilini,,Perera,PHM,0777310021,thilini.perera@moms.lk,PHM30021,2018-02-13,Active
+32,PHM0022,5,22,Udani,,Silva,PHM,0777310022,udani.silva@moms.lk,PHM30022,2020-06-08,Active
+33,PHM0023,5,23,Shashikala,,Fernando,PHM,0777310023,shashikala.fernando@moms.lk,PHM30023,2019-04-01,Active
+34,PHM0024,5,24,Nirmala,,Jayawardena,PHM,0777310024,nirmala.jayawardena@moms.lk,PHM30024,2017-10-24,Active
+35,PHM0025,5,25,Sulochana,,Peris,PHM,0777310025,sulochana.peris@moms.lk,PHM30025,2022-01-17,Active
+36,SPHM0001,1,,Shirani,,Wijeratne,SPHM,0777450001,shirani.wijeratne@moms.lk,SPHM40001,2014-03-15,Active
+37,SPHM0002,3,,Renuka,,Perera,SPHM,0777450002,renuka.perera@moms.lk,SPHM40002,2015-08-10,Active
+38,SUP0001,1,,Anura,,Senanayake,Supervisor,0777560001,anura.senanayake@moms.lk,SUP50001,2013-02-20,Active
+39,SUP0002,5,,Janaka,,Wijesuriya,Supervisor,0777560002,janaka.wijesuriya@moms.lk,SUP50002,2012-09-01,Active
+40,ADM0001,1,,Lakmal,,Perera,Administrator Local,0777670001,lakmal.perera@moms.lk,ADM60001,2020-01-02,Active
+41,ADM0002,1,,Sanjeewa,,Silva,Administrator Local,0777670002,sanjeewa.silva@moms.lk,ADM60002,2021-03-01,Active
+42,ADMG0001,1,,Nuwan,,Abeysinghe,Administrator Global,0777780001,nuwan.abeysinghe@moms.lk,ADM70001,2019-07-15,Active

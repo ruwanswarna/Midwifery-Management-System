@@ -1,0 +1,9 @@
+<?php
+declare(strict_types=1);
+class ReportRepository extends Repository
+{
+    public function getAll():array{return $this->findAll('SELECT r.*, CONCAT_WS(" ",s.first_name,s.middle_name,s.last_name) submitter_name, CONCAT_WS(" ",rv.first_name,rv.middle_name,rv.last_name) reviewer_name FROM report_submission r INNER JOIN staff s ON s.staff_id=r.submitted_by LEFT JOIN staff rv ON rv.staff_id=r.reviewed_by ORDER BY r.submitted_date DESC');}
+    public function findById(int $id):?array{return $this->findOne('SELECT r.*, CONCAT_WS(" ",s.first_name,s.middle_name,s.last_name) submitter_name, CONCAT_WS(" ",rv.first_name,rv.middle_name,rv.last_name) reviewer_name FROM report_submission r INNER JOIN staff s ON s.staff_id=r.submitted_by LEFT JOIN staff rv ON rv.staff_id=r.reviewed_by WHERE r.report_id=:id',['id'=>$id]);}
+    public function staff():array{return $this->findAll('SELECT staff_id,CONCAT_WS(" ",first_name,middle_name,last_name) full_name FROM staff WHERE status="Active" ORDER BY first_name');}
+    public function create(array $d):int{$this->execute('INSERT INTO report_submission (submitted_by,report_type,reporting_period_start,reporting_period_end,submitted_date,approval_status,report_version,generated_by_system,remarks) VALUES (:submitted_by,:report_type,:reporting_period_start,:reporting_period_end,:submitted_date,"Pending",:report_version,:generated_by_system,:remarks)',['submitted_by'=>(int)$d['submitted_by'],'report_type'=>$d['report_type'],'reporting_period_start'=>$d['reporting_period_start'],'reporting_period_end'=>$d['reporting_period_end'],'submitted_date'=>$d['submitted_date'],'report_version'=>trim($d['report_version']??'1.0')?:'1.0','generated_by_system'=>isset($d['generated_by_system'])?1:0,'remarks'=>trim($d['remarks']??'')?:null]);return $this->lastInsertId();}
+}

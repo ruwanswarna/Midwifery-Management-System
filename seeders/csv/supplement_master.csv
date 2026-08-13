@@ -1,0 +1,11 @@
+supplement_id,supplement_name,description,dosage,unit,frequency,minimum_age_months,maximum_age_months,target_group,is_active
+1,Iron Tablets,Iron supplementation,60,mg,Daily,,,Pregnant Mother,1
+2,Folic Acid,Folic acid tablets,400,mcg,Daily,,,Pregnant Mother,1
+3,Calcium Tablets,Calcium supplementation,500,mg,Daily,,,Pregnant Mother,1
+4,Multiple Micronutrient Supplement,MMS tablets,1,tablet,Daily,,,Pregnant Mother,1
+5,Vitamin A Capsule,Vitamin A supplementation,100000,IU,Single Dose,6,11,Child,1
+6,Vitamin A Capsule High Dose,Vitamin A supplementation,200000,IU,Every 6 Months,12,60,Child,1
+7,Thriposha,Nutritional supplement,750,g,Weekly,,,Pregnant Mother,1
+8,Thriposha Child,Complementary food,500,g,Weekly,6,60,Child,1
+9,Zinc Tablets,Zinc supplementation,20,mg,Daily,6,60,Child,1
+10,ORS,Oral Rehydration Salts,1,sachet,As Required,0,60,Child,1
