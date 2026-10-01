@@ -1,0 +1,21 @@
+{
+  "records": [
+    {
+      "id": "child-101",
+      "sex": "Female",
+      "age_days": 730,
+      "weight_kg": 10.8,
+      "length_height_cm": 84.5,
+      "measurement_position": "H",
+      "head_circumference_cm": 47.2
+    },
+    {
+      "id": "child-102",
+      "sex": "M",
+      "age_months": 12,
+      "weight_kg": 8.9,
+      "length_height_cm": 74.0,
+      "measurement_position": "L"
+    }
+  ]
+}
