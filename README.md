@@ -144,14 +144,6 @@ Configure the application URL according to the local development environment.
 
 Create a MySQL database for the application.
 
-For example:
-
-```sql
-CREATE DATABASE midwifery_outcomes_management
-CHARACTER SET utf8mb4
-COLLATE utf8mb4_unicode_ci;
-```
-
 Import the project's database schema into the newly created database.
 
 The database configuration should then be updated according to the local MySQL installation.
@@ -160,8 +152,6 @@ The database configuration should then be updated according to the local MySQL i
 
 Update the database and application configuration files with the appropriate local settings.
 
-Typical settings include:
-
 ```text
 Database host
 Database name
@@ -169,8 +159,6 @@ Database username
 Database password
 Application URL
 ```
-
-Do not commit passwords or other sensitive credentials to the public repository.
 
 ### 5. Configure the Anthro API
 
@@ -218,26 +206,6 @@ Set the API URL to match the address and port used by the local Plumber server.
 
 The PHP application then communicates with the R service through HTTP requests.
 
-## Database Seeding
-
-The repository contains seeders and CSV data for development and testing.
-
-Growth and child development data are provided under:
-
-```text
-seeders/
-```
-
-including:
-
-```text
-seeders/csv/growth_measurement.csv
-seeders/csv/child_development_observation.csv
-```
-
-The available seeders can be used to populate the database with development and testing data.
-
-Refer to the seeder documentation included in the repository before running the seed scripts.
 
 ## WHO Growth Z-Score Calculation
 
@@ -270,9 +238,6 @@ MOMS PHP Application
        v
 Database / Growth Records
 ```
-
-The API is designed to keep the statistical growth-standard calculation separate from the main PHP application.
-
 
 ## Project Documentation
 
