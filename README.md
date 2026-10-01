@@ -273,29 +273,6 @@ Database / Growth Records
 
 The API is designed to keep the statistical growth-standard calculation separate from the main PHP application.
 
-## Development
-
-The project is intended primarily as an academic software engineering project and as a demonstration of the design and implementation of a maternal and child health information management system.
-
-When making changes:
-
-1. Create a new Git branch for the change.
-2. Test the change locally.
-3. Check the database and API integration where applicable.
-4. Commit the changes with a descriptive commit message.
-5. Push the branch to GitHub.
-
-Example:
-
-```bash
-git checkout -b feature/example-change
-```
-
-```bash
-git add .
-git commit -m "Add example change"
-git push -u origin feature/example-change
-```
 
 ## Project Documentation
 
@@ -309,11 +286,6 @@ The project report describes the system requirements, analysis, design, implemen
 
 MOMS was developed as an academic software engineering project. The repository contains the implementation of the proposed system together with supporting database, API, and development resources.
 
-## License
-
-This project does not currently specify an open-source license.
-
-Unless a license is added to the repository, the source code should not be assumed to be available for unrestricted reuse, modification, or redistribution.
 
 ## Authors
 
