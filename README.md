@@ -303,7 +303,7 @@ Additional project documentation can be found in the `docs/` directory.
 
 The project report describes the system requirements, analysis, design, implementation, database design, architecture, testing, and other aspects of the project.
 
-**Project Report:** [MOMS Project Report](docs/MOMS-Project-Report.pdf)
+**Project Report:** [MOMS Project Report](docs/MOMS project - final report.pdf)
 
 ## Academic Project
 
@@ -317,9 +317,9 @@ Unless a license is added to the repository, the source code should not be assum
 
 ## Authors
 
-**Anusha Obadage**
-**Janith Kumara**
-**Thimash Kavinda**
+Anusha Obadage
+Janith Kumara
+Thimash Kavinda
 
 GitHub: [@ruwanswarna](https://github.com/ruwanswarna)
 
