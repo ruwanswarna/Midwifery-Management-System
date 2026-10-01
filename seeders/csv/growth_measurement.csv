@@ -1,0 +1,122 @@
+child_id,measured_by,measurement_date,age_in_days,weight_kg,height_cm,head_circumference_cm,muac_cm,bmi,weight_for_age_z_score,height_for_age_z_score,weight_for_height_z_score,growth_status,remarks
+4,11,2024-01-20,0,2.95,48.70,33.80,,12.44,0.06,0.05,0.05,Normal,Birth weight and length transcribed from child birth record.
+4,11,2024-02-20,31,4.30,53.70,36.85,,14.91,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2024-03-20,60,5.25,57.20,39.25,,16.05,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2024-04-20,91,5.95,60.20,40.85,,16.42,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2024-05-20,121,6.50,62.50,42.15,,16.64,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2024-06-20,152,6.95,64.20,43.05,,16.86,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2024-07-20,182,7.35,65.90,43.75,13.40,16.92,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2024-09-20,244,8.05,69.40,44.65,13.58,16.71,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2024-11-20,305,8.65,72.20,45.25,13.76,16.59,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2025-01-20,366,9.15,74.70,46.05,13.94,16.40,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2025-03-20,425,9.65,77.20,46.55,14.12,16.19,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2025-05-20,486,10.15,79.40,47.05,14.30,16.10,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2025-07-20,547,10.65,81.70,47.45,14.48,15.96,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2025-09-20,609,11.10,83.20,47.75,14.66,16.04,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2025-11-20,670,11.50,85.20,48.05,14.84,15.84,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2026-01-20,731,11.90,87.20,48.35,15.02,15.65,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2026-04-20,821,12.45,89.90,48.65,15.29,15.40,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+4,11,2026-07-20,912,12.95,92.50,48.95,15.56,15.14,0.08,0.07,0.05,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+12,11,2024-02-02,0,2.88,48.30,33.50,,12.35,-0.27,-0.28,-0.16,Normal,Birth weight and length transcribed from child birth record.
+12,11,2024-03-02,29,3.95,53.35,36.76,,13.88,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2024-04-02,60,4.90,56.85,39.16,,15.16,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2024-05-02,90,5.60,59.85,40.76,,15.63,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2024-06-02,121,6.15,62.15,42.06,,15.92,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2024-07-02,151,6.60,63.85,42.96,,16.19,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2024-08-02,182,7.00,65.55,43.66,13.40,16.29,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2024-10-02,243,7.70,69.05,44.56,13.58,16.15,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2024-12-02,304,8.30,71.85,45.16,13.76,16.08,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2025-02-02,366,8.80,74.35,45.96,13.94,15.92,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2025-04-02,425,9.30,76.85,46.46,14.12,15.75,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2025-06-02,486,9.80,79.05,46.96,14.30,15.68,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2025-08-02,547,10.30,81.35,47.36,14.48,15.56,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2025-10-02,608,10.75,82.85,47.66,14.66,15.66,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2025-12-02,669,11.15,84.85,47.96,14.84,15.49,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2026-02-02,731,11.55,86.85,48.26,15.02,15.31,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2026-05-02,820,12.10,89.55,48.56,15.29,15.09,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+12,11,2026-08-02,912,12.60,92.15,48.86,15.56,14.84,-0.25,-0.21,-0.16,Normal,Routine scheduled growth measurement. Growth remains within the expected range.
+16,11,2023-12-01,0,3.08,49.20,34.00,,12.72,-0.07,-0.08,-0.03,Normal,Birth weight and length transcribed from child birth record.
+16,11,2024-01-01,31,4.20,53.55,36.81,,14.65,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2024-02-01,62,5.15,57.05,39.21,,15.82,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2024-03-01,91,5.85,60.05,40.81,,16.22,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2024-04-01,122,6.40,62.35,42.11,,16.46,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2024-05-01,152,6.85,64.05,43.01,,16.70,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2024-06-01,183,7.25,65.75,43.71,13.40,16.77,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2024-08-01,244,7.95,69.25,44.61,13.58,16.58,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2024-10-01,305,8.55,72.05,45.21,13.76,16.47,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2024-12-01,366,9.05,74.55,46.01,13.94,16.28,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2025-02-01,428,9.55,77.05,46.51,14.12,16.09,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2025-04-01,487,10.05,79.25,47.01,14.30,16.00,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2025-06-01,548,10.55,81.55,47.41,14.48,15.86,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2025-08-01,609,11.00,83.05,47.71,14.66,15.95,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2025-10-01,670,11.40,85.05,48.01,14.84,15.76,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2025-12-01,731,11.80,87.05,48.31,15.02,15.57,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2026-03-01,821,12.35,89.75,48.61,15.29,15.33,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+16,11,2026-06-01,913,12.85,92.35,48.91,15.56,15.07,-0.05,-0.04,-0.03,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+20,11,2025-01-18,0,2.97,48.80,33.90,,12.47,-0.17,-0.18,-0.10,Normal,Birth weight and length transcribed from child birth record.
+20,11,2025-02-18,31,4.10,53.45,36.79,,14.35,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+20,11,2025-03-18,59,5.05,56.95,39.19,,15.57,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+20,11,2025-04-18,90,5.75,59.95,40.79,,16.00,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+20,11,2025-05-18,120,6.30,62.25,42.09,,16.26,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+20,11,2025-06-18,151,6.75,63.95,42.99,,16.51,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+20,11,2025-07-18,181,7.15,65.65,43.69,13.40,16.59,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+20,11,2025-09-18,243,7.85,69.15,44.59,13.58,16.42,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+20,11,2025-11-18,304,8.45,71.95,45.19,13.76,16.32,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+20,11,2026-01-18,365,8.95,74.45,45.99,13.94,16.15,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+20,11,2026-03-18,424,9.45,76.95,46.49,14.12,15.96,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+20,11,2026-05-18,485,9.95,79.15,46.99,14.30,15.88,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+20,11,2026-07-18,546,10.45,81.45,47.39,14.48,15.75,-0.15,-0.13,-0.10,Normal,Routine scheduled growth measurement. Feeding and growth are appropriate for age.
+24,11,2023-09-03,0,2.76,47.90,33.20,,12.03,-0.60,-0.75,-0.10,Normal,Birth weight and length transcribed from child birth record.
+24,11,2023-10-03,30,3.85,51.70,36.55,,14.40,-0.62,-0.78,-0.12,Normal,Routine scheduled growth measurement. Early growth is appropriate for age.
+24,11,2023-11-03,61,4.75,55.30,38.95,,15.53,-0.65,-0.80,-0.15,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+24,11,2023-12-03,91,5.40,58.00,40.55,,16.05,-0.70,-0.82,-0.18,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+24,11,2024-01-03,122,5.90,60.20,41.85,,16.28,-0.72,-0.85,-0.20,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+24,11,2024-02-03,153,6.30,62.00,42.75,,16.39,-0.78,-0.88,-0.22,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+24,11,2024-03-03,182,6.60,64.10,43.45,13.25,16.06,-0.80,-0.90,-0.20,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+24,11,2024-05-03,243,7.20,67.40,44.35,13.43,15.85,-1.00,-1.05,-0.35,Normal,Routine scheduled growth measurement. Appetite was slightly reduced but growth remains within range.
+24,11,2024-07-03,304,7.60,69.50,44.95,13.61,15.73,-1.50,-1.40,-0.55,Normal,Recent gastrointestinal illness reported. Nutrition and hydration advice given.
+24,11,2024-09-03,366,7.80,71.00,45.75,13.44,15.47,-2.10,-1.90,-0.85,Underweight,Persistent gastrointestinal illness. Reduced weight gain observed. Referred for clinical review.
+24,11,2024-11-03,427,8.00,72.00,46.25,13.62,15.43,-2.20,-2.30,-0.80,Stunted,Illness ongoing. Reduced linear growth observed. Follow-up arranged.
+24,11,2025-01-03,488,8.30,73.00,46.75,13.80,15.58,-2.15,-2.70,-0.65,Stunted,Under treatment for recurrent illness. Linear growth remains below the expected range.
+24,11,2025-03-03,547,8.70,74.50,47.15,13.98,15.67,-1.95,-3.05,-0.35,Severely Stunted,Treatment completed recently. Appetite is improving but severe stunting requires monitoring.
+24,11,2025-05-03,608,9.30,77.00,47.45,14.51,15.69,-1.50,-2.70,-0.15,Stunted,Recovered from illness. Weight gain and gradual height catch-up are evident.
+24,11,2025-07-03,669,9.80,79.00,47.75,14.69,15.70,-1.10,-2.40,0.00,Stunted,Recovered from illness. Continue nutrition plan and growth monitoring.
+24,11,2025-09-03,731,10.30,81.00,48.05,14.87,15.70,-0.70,-2.10,0.10,Stunted,Ongoing catch-up growth after recovery. Linear growth is improving.
+24,11,2025-12-03,822,11.00,84.30,48.35,15.14,15.48,-0.40,-1.80,0.15,Normal,Recovered from illness. Height-for-age has returned to the normal range.
+24,11,2026-03-03,912,11.80,87.80,48.65,15.41,15.31,-0.20,-1.40,0.18,Normal,Continued catch-up growth after recovery. No current growth concern.
+24,11,2026-06-03,1004,12.60,91.30,48.95,15.68,15.12,-0.10,-1.00,0.20,Normal,Current measurement. Sustained recovery and healthy growth progression observed.
+29,11,2024-04-17,0,3.27,50.20,34.80,,12.98,0.08,0.07,0.07,Normal,Birth weight and length transcribed from child birth record.
+29,11,2024-05-17,30,4.27,53.65,36.84,,14.84,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2024-06-17,61,5.22,57.15,39.24,,15.98,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2024-07-17,91,5.92,60.15,40.84,,16.36,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2024-08-17,122,6.47,62.45,42.14,,16.59,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2024-09-17,153,6.92,64.15,43.04,,16.82,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2024-10-17,183,7.32,65.85,43.74,13.40,16.88,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2024-12-17,244,8.02,69.35,44.64,13.58,16.68,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2025-02-17,306,8.62,72.15,45.24,13.76,16.56,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2025-04-17,365,9.12,74.65,46.04,13.94,16.37,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2025-06-17,426,9.62,77.15,46.54,14.12,16.16,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2025-08-17,487,10.12,79.35,47.04,14.30,16.07,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2025-10-17,548,10.62,81.65,47.44,14.48,15.93,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2025-12-17,609,11.07,83.15,47.74,14.66,16.01,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2026-02-17,671,11.47,85.15,48.04,14.84,15.82,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2026-04-17,730,11.87,87.15,48.34,15.02,15.63,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+29,11,2026-07-17,821,12.42,89.85,48.64,15.29,15.38,0.10,0.09,0.07,Normal,Routine scheduled growth measurement. Growth is appropriate for age.
+49,11,2023-11-20,0,3.14,49.40,34.30,,12.87,-0.02,-0.03,0.00,Normal,Birth weight and length transcribed from child birth record.
+49,11,2023-12-20,30,4.20,53.50,36.80,,14.67,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2024-01-20,61,5.15,57.00,39.20,,15.85,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2024-02-20,92,5.85,60.00,40.80,,16.25,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2024-03-20,121,6.40,62.30,42.10,,16.49,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2024-04-20,152,6.85,64.00,43.00,,16.72,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2024-05-20,182,7.25,65.70,43.70,13.40,16.80,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2024-07-20,243,7.95,69.20,44.60,13.58,16.60,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2024-09-20,305,8.55,72.00,45.20,13.76,16.49,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2024-11-20,366,9.05,74.50,46.00,13.94,16.31,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2025-01-20,427,9.55,77.00,46.50,14.12,16.11,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2025-03-20,486,10.05,79.20,47.00,14.30,16.02,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2025-05-20,547,10.55,81.50,47.40,14.48,15.88,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2025-07-20,608,11.00,83.00,47.70,14.66,15.97,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2025-09-20,670,11.40,85.00,48.00,14.84,15.78,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2025-11-20,731,11.80,87.00,48.30,15.02,15.59,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2026-02-20,823,12.35,89.70,48.60,15.29,15.35,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.
+49,11,2026-05-20,912,12.85,92.30,48.90,15.56,15.08,0.00,0.00,0.00,Normal,Routine scheduled growth measurement. Healthy growth progression observed.

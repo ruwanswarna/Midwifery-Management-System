@@ -1,0 +1,85 @@
+child_id,milestone_id,observed_by,observation_date,observation_status,follow_up_required,follow_up_date,remarks
+4,1,11,2024-03-25,Achieved,0,,Social smile observed during routine clinic review.
+4,2,11,2024-04-29,Achieved,0,,Holds head steady when supported.
+4,3,11,2024-06-23,Achieved,0,,Rolls over independently.
+4,4,11,2024-08-27,Achieved,0,,Sits without support.
+4,13,11,2024-09-11,Achieved,0,,Babbles with repeated sounds.
+4,9,11,2024-10-16,Achieved,0,,Uses pincer grasp to pick up small objects.
+4,5,11,2024-10-31,Achieved,0,,Crawls forward independently.
+4,6,11,2024-12-05,Achieved,0,,Pulls to stand using furniture.
+4,14,11,2025-01-04,Achieved,0,,Uses mama or dada meaningfully.
+4,7,11,2025-05-04,Achieved,0,,Walks independently.
+4,15,11,2025-06-03,Achieved,0,,Uses two-word phrases.
+4,8,11,2025-11-10,Achieved,0,,Runs steadily during play.
+12,1,11,2024-04-07,Achieved,0,,Social smile observed during routine clinic review.
+12,2,11,2024-05-12,Achieved,0,,Holds head steady when supported.
+12,3,11,2024-07-06,Achieved,0,,Rolls over independently.
+12,4,11,2024-09-09,Achieved,0,,Sits without support.
+12,13,11,2024-09-24,Achieved,0,,Babbles with repeated sounds.
+12,9,11,2024-10-29,Achieved,0,,Uses pincer grasp to pick up small objects.
+12,5,11,2024-11-13,Achieved,0,,Crawls forward independently.
+12,6,11,2024-12-18,Achieved,0,,Pulls to stand using furniture.
+12,14,11,2025-03-08,Delayed,1,2025-04-07,Limited meaningful words observed; caregiver advised to encourage responsive talking.
+12,7,11,2025-05-17,Achieved,0,,Walks independently.
+12,15,11,2025-06-16,Achieved,0,,Uses two-word phrases.
+12,8,11,2025-11-23,Achieved,0,,Runs steadily during play.
+16,1,11,2024-02-04,Achieved,0,,Social smile observed during routine clinic review.
+16,2,11,2024-03-10,Achieved,0,,Holds head steady when supported.
+16,3,11,2024-05-04,Achieved,0,,Rolls over independently.
+16,4,11,2024-07-08,Achieved,0,,Sits without support.
+16,13,11,2024-07-23,Achieved,0,,Babbles with repeated sounds.
+16,9,11,2024-08-27,Achieved,0,,Uses pincer grasp to pick up small objects.
+16,5,11,2024-09-11,Achieved,0,,Crawls forward independently.
+16,6,11,2024-10-16,Achieved,0,,Pulls to stand using furniture.
+16,14,11,2024-11-15,Achieved,0,,Uses mama or dada meaningfully.
+16,7,11,2025-03-15,Achieved,0,,Walks independently.
+16,15,11,2025-04-14,Achieved,0,,Uses two-word phrases.
+16,8,11,2025-09-21,Achieved,0,,Runs steadily during play.
+20,1,11,2025-03-24,Achieved,0,,Social smile observed during routine clinic review.
+20,2,11,2025-04-28,Achieved,0,,Holds head steady when supported.
+20,3,11,2025-06-22,Achieved,0,,Rolls over independently.
+20,4,11,2025-08-26,Achieved,0,,Sits without support.
+20,13,11,2025-09-10,Achieved,0,,Babbles with repeated sounds.
+20,9,11,2025-10-15,Achieved,0,,Uses pincer grasp to pick up small objects.
+20,5,11,2025-10-30,Achieved,0,,Crawls forward independently.
+20,6,11,2025-12-04,Achieved,0,,Pulls to stand using furniture.
+20,14,11,2026-01-03,Achieved,0,,Uses mama or dada meaningfully.
+20,7,11,2026-05-03,Achieved,0,,Walks independently.
+20,15,11,2026-06-02,Achieved,0,,Uses two-word phrases.
+24,1,11,2023-11-07,Achieved,0,,Social smile observed during routine clinic review.
+24,2,11,2023-12-12,Achieved,0,,Holds head steady when supported.
+24,3,11,2024-02-05,Achieved,0,,Rolls over independently.
+24,4,11,2024-04-10,Achieved,0,,Sits without support.
+24,13,11,2024-04-25,Achieved,0,,Babbles with repeated sounds.
+24,9,11,2024-05-30,Achieved,0,,Uses pincer grasp to pick up small objects.
+24,5,11,2024-08-08,Delayed,1,2024-09-07,Crawling was not yet established; home stimulation activities explained.
+24,5,11,2024-09-27,Achieved,0,,Crawling achieved at follow-up after caregiver stimulation activities.
+24,6,11,2024-07-19,Achieved,0,,Pulls to stand using furniture.
+24,14,11,2024-08-18,Achieved,0,,Uses mama or dada meaningfully.
+24,7,11,2024-12-16,Achieved,0,,Walks independently.
+24,15,11,2025-01-15,Achieved,0,,Uses two-word phrases.
+24,8,11,2025-06-24,Achieved,0,,Runs steadily during play.
+29,1,11,2024-06-21,Achieved,0,,Social smile observed during routine clinic review.
+29,2,11,2024-07-26,Achieved,0,,Holds head steady when supported.
+29,3,11,2024-09-19,Achieved,0,,Rolls over independently.
+29,4,11,2024-11-23,Achieved,0,,Sits without support.
+29,13,11,2024-12-08,Achieved,0,,Babbles with repeated sounds.
+29,9,11,2025-01-12,Achieved,0,,Uses pincer grasp to pick up small objects.
+29,5,11,2025-01-27,Achieved,0,,Crawls forward independently.
+29,6,11,2025-03-03,Achieved,0,,Pulls to stand using furniture.
+29,14,11,2025-04-02,Achieved,0,,Uses mama or dada meaningfully.
+29,7,11,2025-07-31,Achieved,0,,Walks independently.
+29,15,11,2025-08-30,Achieved,0,,Uses two-word phrases.
+29,8,11,2026-02-06,Achieved,0,,Runs steadily during play.
+49,1,11,2024-01-24,Achieved,0,,Social smile observed during routine clinic review.
+49,2,11,2024-02-28,Achieved,0,,Holds head steady when supported.
+49,3,11,2024-04-23,Achieved,0,,Rolls over independently.
+49,4,11,2024-06-27,Achieved,0,,Sits without support.
+49,13,11,2024-07-12,Achieved,0,,Babbles with repeated sounds.
+49,9,11,2024-08-16,Achieved,0,,Uses pincer grasp to pick up small objects.
+49,5,11,2024-08-31,Achieved,0,,Crawls forward independently.
+49,6,11,2024-10-05,Achieved,0,,Pulls to stand using furniture.
+49,14,11,2024-11-04,Achieved,0,,Uses mama or dada meaningfully.
+49,7,11,2025-03-04,Achieved,0,,Walks independently.
+49,15,11,2025-04-03,Achieved,0,,Uses two-word phrases.
+49,8,11,2025-09-10,Achieved,0,,Runs steadily during play.

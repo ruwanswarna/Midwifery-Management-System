@@ -83,37 +83,6 @@ class ChildRepository extends Repository
         ) ?? ['total' => 0, 'under_one' => 0, 'under_five' => 0, 'special_needs' => 0];
     }
 
-    public function findEligiblePeople(): array
-    {
-        return $this->findAll(
-            'SELECT p.person_id, p.family_id,
-                    CONCAT_WS(" ", p.first_name, p.middle_name, p.last_name) AS full_name,
-                    p.date_of_birth, f.registration_number
-             FROM person p
-             INNER JOIN family f ON f.family_id = p.family_id
-             LEFT JOIN child c ON c.person_id = p.person_id
-             WHERE c.person_id IS NULL AND p.status = "Active"
-               AND TIMESTAMPDIFF(YEAR, p.date_of_birth, CURDATE()) < 18
-             ORDER BY p.date_of_birth DESC, full_name'
-        );
-    }
-
-    public function findAvailableBirthOutcomes(): array
-    {
-        return $this->findAll(
-            'SELECT bo.birth_outcome_id, bo.delivery_date, bo.outcome_type,
-                    CONCAT_WS(" ", m.first_name, m.middle_name, m.last_name) AS mother_name,
-                    f.registration_number
-             FROM birth_outcome bo
-             INNER JOIN pregnancy pr ON pr.pregnancy_id = bo.pregnancy_id
-             INNER JOIN person m ON m.person_id = pr.mother_id
-             INNER JOIN family f ON f.family_id = m.family_id
-             LEFT JOIN child c ON c.birth_outcome_id = bo.birth_outcome_id
-             WHERE bo.outcome_type IN ("Live Birth", "Live Birth - Expired")
-               AND c.person_id IS NULL
-             ORDER BY bo.delivery_date DESC'
-        );
-    }
 
     public function countByAgeRange(int $startAgeMonths = 0, int $endAgeMonths = 60): int
     {

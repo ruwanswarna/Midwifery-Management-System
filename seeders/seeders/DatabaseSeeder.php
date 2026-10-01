@@ -1,70 +1,57 @@
 <?php
 
-declare(strict_types=1);
+require_once 'DistrictSeeder.php';
+require_once 'MohAreaSeeder.php';
+require_once 'PhmAreaSeeder.php';
 
-require_once __DIR__ . '/DistrictSeeder.php';
-require_once __DIR__ . '/MohAreaSeeder.php';
-require_once __DIR__ . '/PhmAreaSeeder.php';
-require_once __DIR__ . '/PersonRoleSeeder.php';
-require_once __DIR__ . '/StaffSeeder.php';
-require_once __DIR__ . '/FamilySeeder.php';
-require_once __DIR__ . '/PersonSeeder.php';
-require_once __DIR__ . '/PregnancySeeder.php';
-require_once __DIR__ . '/BirthOutcomeSeeder.php';
-require_once __DIR__ . '/ChildSeeder.php';
-require_once __DIR__ . '/VaccineMasterSeeder.php';
-require_once __DIR__ . '/VaccineScheduleSeeder.php';
-require_once __DIR__ . '/VaccinationRecordSeeder.php';
-require_once __DIR__ . '/SupplementMasterSeeder.php';
-require_once __DIR__ . '/DevelopmentMilestoneSeeder.php';
+require_once 'PersonRoleSeeder.php';
+// require_once 'RelationshipSeeder.php';
+// require_once 'OccupationSeeder.php';
 
-final class DatabaseSeeder
-{
-    /** @var array<string, class-string<CsvSeeder>> */
-    private array $seeders = [
-        'district' => DistrictSeeder::class,
-        'moh_area' => MohAreaSeeder::class,
-        'phm_area' => PhmAreaSeeder::class,
-        'person_role' => PersonRoleSeeder::class,
-        'staff' => StaffSeeder::class,
-        'family' => FamilySeeder::class,
-        'person' => PersonSeeder::class,
-        'pregnancy' => PregnancySeeder::class,
-        'birth_outcome' => BirthOutcomeSeeder::class,
-        'child' => ChildSeeder::class,
-        'vaccine_master' => VaccineMasterSeeder::class,
-        'vaccine_schedule' => VaccineScheduleSeeder::class,
-        'vaccination_record' => VaccinationRecordSeeder::class,
-        'supplement_master' => SupplementMasterSeeder::class,
-        'development_milestone' => DevelopmentMilestoneSeeder::class,
-    ];
+require_once 'StaffSeeder.php';
+require_once 'FamilySeeder.php';
+require_once 'PersonSeeder.php';
 
-    /** @return list<string> */
-    public function available(): array
-    {
-        return array_keys($this->seeders);
-    }
+require_once 'PregnancySeeder.php';
+require_once 'BirthOutcomeSeeder.php';
+require_once 'ChildSeeder.php';
+require_once 'DevelopmentMilestoneSeeder.php';
+require_once 'GrowthMeasurementSeeder.php';
+require_once 'ChildDevelopmentObservationSeeder.php';
 
-    /** @param list<string> $targets */
-    public function run(array $targets): void
-    {
-        foreach ($targets as $target) {
-            if (!isset($this->seeders[$target])) {
-                throw new InvalidArgumentException(
-                    "Unknown seeder '{$target}'. Use: php seed.php --list"
-                );
-            }
+require_once 'VaccinationRecordSeeder.php';
 
-            $class = $this->seeders[$target];
-            echo "Running {$class}..." . PHP_EOL;
-            (new $class())->run();
-        }
+$seeders = [
 
-        echo "Selected seeding completed successfully." . PHP_EOL;
-    }
+    new DistrictSeeder(),
+    new MohAreaSeeder(),
+    new PhmAreaSeeder(),
 
-    public function runAll(): void
-    {
-        $this->run($this->available());
-    }
+    new PersonRoleSeeder(),
+    new StaffSeeder(),
+
+    new FamilySeeder(),
+    new PersonSeeder(),
+
+    new PregnancySeeder(),
+    new BirthOutcomeSeeder(),
+    new ChildSeeder(),
+    new DevelopmentMilestoneSeeder(),
+    new GrowthMeasurementSeeder(),
+    new ChildDevelopmentObservationSeeder(),
+
+    new VaccinationRecordSeeder()
+
+];
+
+foreach ($seeders as $seeder) {
+
+    echo "Running "
+        . get_class($seeder)
+        . "..." . PHP_EOL;
+
+    $seeder->run();
 }
+
+echo PHP_EOL;
+echo "Database seeding completed successfully.";

@@ -1,19 +1,16 @@
 <?php
-
 declare(strict_types=1);
 class FamilyService
 {
 	private FamilyRepository $repository;
 	private FamilyMemberRepository $memberRepository;
 	private PHMAreaRepository $phmAreaRepository;
-
 	public function __construct()
 	{
 		$this->repository = new FamilyRepository();
 		$this->memberRepository = new FamilyMemberRepository();
 		$this->phmAreaRepository = new PHMAreaRepository();
 	}
-
 	// Get family registry with pagination
 	public function getRegistry(array $queryParams): array
 	{
@@ -34,7 +31,6 @@ class FamilyService
 		$totalPages = max(1, (int) ceil($totalRecords / $recordsPerPage));
 		$page = min($page, $totalPages);
 		$offset = ($page - 1) * $recordsPerPage;
-
 		return [
 			'families' => $this->repository->findRegistry([], $recordsPerPage, $offset),
 			'pagination' => [

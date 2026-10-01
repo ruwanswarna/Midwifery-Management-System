@@ -4,41 +4,56 @@ declare(strict_types=1);
 
 class ChildService
 {
-    private ChildRepository $repository;
+
+    private ChildRepository $childRepository;
+    private FamilyRepository $familyRepository;
+    private PregnancyRepository $pregnancyRepository;
+
 
     public function __construct()
     {
-        $this->repository = new ChildRepository();
+        $this->childRepository = new ChildRepository();
+        $this->familyRepository = new FamilyRepository();
+        $this->pregnancyRepository = new PregnancyRepository();
     }
 
     public function overview(): array
     {
         return [
-            'children' => $this->repository->findRecent(),
-            'statistics' => $this->repository->statistics(),
+            'children' => $this->childRepository->findRecent(),
+            'statistics' => $this->childRepository->statistics(),
         ];
     }
 
     public function getAll(string $search = ''): array
     {
-        return $this->repository->search(trim($search));
+        return $this->childRepository->search(trim($search));
     }
 
     public function findById(int $id): ?array
     {
-        return $this->repository->findById($id);
+        return $this->childRepository->findById($id);
     }
 
     public function getByFamily(int $familyId): array
     {
-        return $this->repository->byFamily($familyId);
+        return $this->childRepository->byFamily($familyId);
+    }
+
+    public function getActivePregnancies()
+    {
+        return $this->pregnancyRepository->findActivePregnancies();
     }
 
     public function formOptions(): array
     {
+        $activePregnancies = $this->pregnancyRepository->findActivePregnancies();
+
+
         return [
-            'people' => $this->repository->findEligiblePeople(),
-            'birthOutcomes' => $this->repository->findAvailableBirthOutcomes(),
+            'pregnancies' => $this->pregnancyRepository->findActivePregnancies(),
+            //'people' => $this->familyRepository->findEligiblePeople(),
+            //'birthOutcomes' => $this->pregnancyRepository->findAvailableBirthOutcomes(),
         ];
     }
 
@@ -49,7 +64,7 @@ class ChildService
         }
 
         try {
-            return $this->repository->create($data);
+            return $this->childRepository->create($data);
         } catch (PDOException $exception) {
             $code = (int) ($exception->errorInfo[1] ?? 0);
             if ($code === 1062) {
@@ -63,15 +78,15 @@ class ChildService
 
     public function update(int $id, array $data): bool
     {
-        if ($this->repository->findById($id) === null || !$this->validate($data, false)) {
+        if ($this->childRepository->findById($id) === null || !$this->validate($data, false)) {
             return false;
         }
-        return $this->repository->update($id, $data);
+        return $this->childRepository->update($id, $data);
     }
 
     public function archive(int $id): bool
     {
-        if ($this->repository->findById($id) === null) {
+        if ($this->childRepository->findById($id) === null) {
             $_SESSION['errors'] = ['general' => 'Child health record not found.'];
             return false;
         }

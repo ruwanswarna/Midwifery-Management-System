@@ -18,6 +18,7 @@ declare(strict_types=1);
 require_once ROOT_PATH . '/config/constants.php';
 require_once ROOT_PATH . '/config/app.php';
 require_once ROOT_PATH . '/config/database.php';
+require_once ROOT_PATH . '/config/anthroApi.php';
 
 // Load Helper Functions
 require ROOT_PATH . '/app/helpers/functions.php';

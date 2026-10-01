@@ -77,7 +77,7 @@ class GrowthController extends Controller
 
     // Child Profile Growth Management
     public function show(int $id): void
-    {   
+    {
 
         // find whether the child exists
         $child = $this->childService->findById($id);

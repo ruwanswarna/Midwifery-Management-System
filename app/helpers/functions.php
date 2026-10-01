@@ -15,6 +15,18 @@ function d(...$value): void
     print_r($value);
     echo '</pre>';
 }
+function testAnthroApiClient()
+{
+    $anthroApi = new AnthroApiClient();
+
+    echo '<pre>';
+
+    print_r($anthroApi->health());
+    print_r($anthroApi->metadata());
+
+    echo '</pre>';
+    exit;
+}
 function e(string|int|float|bool|null $value): string
 {
     return htmlspecialchars((string) $value ?? '', ENT_QUOTES, 'UTF-8');

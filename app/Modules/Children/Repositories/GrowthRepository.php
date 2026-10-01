@@ -123,15 +123,17 @@ class GrowthRepository extends Repository
 
     // Insert a new growth measurement
     public function create(int $childId, array $data): int
-    {
+    {   //TEST
+        //dd($data);
+
         $this->execute(
             'INSERT INTO growth_measurement
-                (child_id, measured_by, measurement_date, age_in_days, weight_kg,
+                (child_id, measured_by, measurement_date, age_in_days, age_in_months, weight_kg,
                  height_cm, head_circumference_cm, muac_cm, bmi,
                  weight_for_age_z_score, height_for_age_z_score,
                  weight_for_height_z_score, growth_status, remarks)
              VALUES
-                (:child_id, :measured_by, :measurement_date, :age_in_days, :weight_kg,
+                (:child_id, :measured_by, :measurement_date, :age_in_days, :age_in_months, :weight_kg,
                  :height_cm, :head_circumference_cm, :muac_cm, :bmi,
                  :weight_for_age_z_score, :height_for_age_z_score,
                  :weight_for_height_z_score, :growth_status, :remarks)',
@@ -169,6 +171,7 @@ class GrowthRepository extends Repository
             'measured_by' => (int) ($data['measured_by'] ?? 0),
             'measurement_date' => $data['measurement_date'] ?? '',
             'age_in_days' => (int) ($data['age_in_days'] ?? 0),
+            'age_in_months' => (int) ($data['age_in_months'] ?? 0),
             'weight_kg' => $nullable('weight_kg'),
             'height_cm' => $nullable('height_cm'),
             'head_circumference_cm' => $nullable('head_circumference_cm'),

@@ -16,6 +16,38 @@ class PregnancyRepository extends Repository
         );
     }
 
+    public function findActivePregnancies()
+    {
+        return $this->findAll(
+            'SELECT
+                p.pregnancy_id,
+                p.pregnancy_type,
+                p.expected_delivery_date,
+                p.risk_status,
+                mother.family_id,
+                CONCAT_WS(
+                    " ",
+                    mother.first_name,
+                    NULLIF(mother.middle_name, ""),
+                    mother.last_name
+                ) AS mother_name,
+                f.registration_number
+            FROM pregnancy AS p
+            INNER JOIN person AS mother
+                ON mother.person_id = p.mother_id
+            INNER JOIN family AS f
+                ON f.family_id = mother.family_id
+            WHERE p.current_status = :status
+                AND NOT EXISTS (
+                    SELECT 1
+                    FROM birth_outcome AS bo
+                    WHERE bo.pregnancy_id = p.pregnancy_id
+                )
+            ORDER BY p.expected_delivery_date ASC',
+            ['status' => 'Ongoing']
+        );
+    }
+
     // find recent pregnancies registered within the last $limitDays days
     public function findRecentActivity(int $limitDays): array
     {

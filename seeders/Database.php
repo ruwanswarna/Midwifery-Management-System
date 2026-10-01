@@ -7,7 +7,7 @@ class Database
     public function __construct()
     {
         $host = 'localhost';
-        $dbname = 'midwifery_outcomes_management';
+        $dbname = 'moms_temp';
         $username = 'root';
         $password = '';
 

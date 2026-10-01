@@ -1,58 +1,44 @@
 <?php
-
 declare(strict_types=1);
-
 abstract class Repository
 {
     protected PDO $db;
-
     // get database connection
     public function __construct()
     {
         $this->db = (new Database())->connection();
     }
-
     //Prepare and execute any SQL statement
     protected function query(
         string $sql,
         array $params = []
     ): PDOStatement {
-
         $statement = $this->db->prepare($sql);
-
         $statement->execute($params);
-
         return $statement;
     }
-
     // Fetch one row or return null
     protected function findOne(
         string $sql,
         array $params = []
     ): ?array {
-
         $row = $this->query($sql, $params)->fetch();
-
         return $row ?: null;
     }
-
     // Fetch multiple rows
     protected function findAll(
         string $sql,
         array $params = []
     ): array {
-
         return $this
             ->query($sql, $params)
             ->fetchAll();
     }
-
     // execute any SQL statement
     protected function execute(
         string $sql,
         array $params = []
     ): int {
-
         return $this
             ->query($sql, $params)
             ->rowCount();

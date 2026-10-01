@@ -1,10 +1,39 @@
 <?php
+//TEST
+//dd($pregnancies);
 
-$errors = $_SESSION['errors'] ?? [];
+
 $formData = $_SESSION['form_data'] ?? [];
 
-unset($_SESSION['errors'], $_SESSION['form_data']);
+// unset($_SESSION['errors'], $_SESSION['form_data']);
 
+// $personData = $formData['personData'] ?? [];
+// $childData = $formData['childData'] ?? [];
+
+// $personValue = static function (
+// 	string $key,
+// 	mixed $default = ''
+// ) use ($personData): mixed {
+// 	return array_key_exists($key, $personData)
+// 		? $personData[$key]
+// 		: $default;
+// };
+
+// $childValue = static function (
+// 	string $key,
+// 	mixed $default = ''
+// ) use ($childData): mixed {
+// 	return array_key_exists($key, $childData)
+// 		? $childData[$key]
+// 		: $default;
+// };
+
+
+$pregnancies = $pregnancies ?? [];
+$errors = $_SESSION['errors'] ?? [];
+$formData = $_SESSION['childRegistrationData'] ?? [];
+
+$birthOutcomeData = $formData['birthOutcomeData'] ?? [];
 $personData = $formData['personData'] ?? [];
 $childData = $formData['childData'] ?? [];
 
@@ -25,6 +54,11 @@ $childValue = static function (
 		? $childData[$key]
 		: $default;
 };
+
+
+$selectedPregnancyId = (int) (
+	$birthOutcomeData['pregnancy_id'] ?? 0
+);
 
 $inputClass = static function (string $field) use ($errors): string {
 	$base = 'mt-1 block w-full rounded-lg border bg-white px-3 py-2.5 '
@@ -57,8 +91,6 @@ $fieldError = static function (string $field) use ($errors): void {
 <?php
 };
 
-$selectedFamilyId = (int) $personValue('family_id', 0);
-$selectedBirthOutcomeId = (int) $childValue('birth_outcome_id', 0);
 ?>
 
 <form
@@ -74,94 +106,51 @@ $selectedBirthOutcomeId = (int) $childValue('birth_outcome_id', 0);
 		</div>
 	<?php endif; ?>
 
-	<!-- Family selection -->
+	<!-- Pregnancy selection -->
 	<section class="rounded-xl border border-slate-200 bg-white shadow-sm">
-
-
 		<div class="p-3">
 			<label
-				for="family_id"
+				for="pregnancy_id"
 				class="block text-sm font-medium text-slate-700">
-				Family
+				Pregnancy
 				<span class="text-red-500">*</span>
 			</label>
 
 			<select
-				id="family_id"
-				name="personData[family_id]"
+				id="pregnancy_id"
+				name="birthOutcomeData[pregnancy_id]"
 				required
-				class="<?= $inputClass('family_id') ?>">
-				<option value="">Select a family - <?php if (empty($families)): ?>No families available<?php endif; ?></option>
+				class="<?= $inputClass('pregnancy_id') ?>">
+				<option value="">Select an onginig pregnancy</option>
 
-				<?php foreach (($families ?? []) as $family): ?>
-					<?php
-					$familyId = (int) $family['family_id'];
+				<?php foreach (($pregnancies ?? []) as $pregnancy): ?>
+				<?php
+					$pregnancyId = (int) $pregnancy['pregnancy_id'];
+					$label = sprintf(
+						'%s — %s — EDD %s — %s',
+						$pregnancy['registration_number'],
+						$pregnancy['mother_name'],
+						$pregnancy['expected_delivery_date'],
+						$pregnancy['pregnancy_type']
+					);
 
-					$familyLabel = $family['registration_number'] ?? '';
+				?>
 
-					if (!empty($family['contact_person_name'])) {
-						$familyLabel .= ' · ' . $family['contact_person_name'];
-					}
-
-					if (!empty($family['address'])) {
-						$familyLabel .= ' · ' . $family['address'];
-					}
-					?>
-
-					<option
-						value="<?= $familyId ?>"
-						<?= $selectedFamilyId === $familyId
-							? 'selected'
-							: '' ?>>
-						<?= e($familyLabel) ?>
-					</option>
-				<?php endforeach; ?>
+				<option
+					value="<?= $pregnancyId ?>"
+					<?= $selectedPregnancyId === $pregnancyId
+						? 'selected'
+						: '' ?>>
+					<?= e($label) ?>
+				</option>
+			<?php endforeach; ?>
 			</select>
 
-			<?php $fieldError('family_id'); ?>
-
-		</div>
-		<div class="p-3">
-			<label
-				for="birth_outcome_id"
-				class="block text-sm font-medium text-slate-700">
-				Birth Outcome
-				<span class="text-red-500">*</span>
-			</label>
-
-			<select
-				id="birth_outcome_id"
-				name="personData[birth_outcome_id]"
-				required
-				class="<?= $inputClass('birth_outcome_id') ?>">
-				<option value="">Select a birth outcome <?php if (empty($birthOutcomes)): ?>No birth outcomes available<?php endif; ?></option>
-
-				<?php foreach (($birthOutcomes ?? []) as $outcome): ?>
-					<?php
-					$outcomeId = (int) $outcome['birth_outcome_id'];
-
-					$familyLabel = $family['registration_number'] ?? '';
-
-					if (!empty($family['contact_person_name'])) {
-						$familyLabel .= ' · ' . $family['contact_person_name'];
-					}
-
-					if (!empty($family['address'])) {
-						$familyLabel .= ' · ' . $family['address'];
-					}
-					?>
-
-					<option
-						value="<?= $familyId ?>"
-						<?= $selectedFamilyId === $familyId
-							? 'selected'
-							: '' ?>>
-						<?= e($familyLabel) ?>
-					</option>
-				<?php endforeach; ?>
-			</select>
-
-			<?php $fieldError('family_id'); ?>
+			<?php if (isset($errors['pregnancy_id'])): ?>
+				<p class="mt-1 text-sm text-red-600">
+					<?= e($errors['pregnancy_id']) ?>
+				</p>
+			<?php endif; ?>
 
 		</div>
 	</section>
@@ -270,26 +259,6 @@ $selectedBirthOutcomeId = (int) $childValue('birth_outcome_id', 0);
 				<?php $fieldError('gender'); ?>
 			</div>
 
-			<!-- Date of birth -->
-			<div>
-				<label
-					for="date_of_birth"
-					class="block text-sm font-medium text-slate-700">
-					Date of birth
-					<span class="text-red-500">*</span>
-				</label>
-
-				<input
-					type="date"
-					id="date_of_birth"
-					name="personData[date_of_birth]"
-					required
-					max="<?= date('Y-m-d') ?>"
-					value="<?= e((string) $personValue('date_of_birth')) ?>"
-					class="<?= $inputClass('date_of_birth') ?>">
-
-				<?php $fieldError('date_of_birth'); ?>
-			</div>
 
 			<!-- Blood group -->
 			<div>
@@ -345,7 +314,7 @@ $selectedBirthOutcomeId = (int) $childValue('birth_outcome_id', 0);
 		</div>
 
 		<div class="grid gap-5 p-6 md:grid-cols-2">
-		
+
 
 			<!-- Registered date -->
 			<div>
@@ -369,6 +338,112 @@ $selectedBirthOutcomeId = (int) $childValue('birth_outcome_id', 0);
 					class="<?= $inputClass('registered_date') ?>">
 
 				<?php $fieldError('registered_date'); ?>
+			</div>
+
+			<!-- Delivery date -->
+			<div>
+				<label
+					for="delivery_date"
+					class="block text-sm font-medium text-slate-700">
+					Delivery date
+					<span class="text-red-500">*</span>
+				</label>
+				<input
+					type="date"
+					name="birthOutcomeData[delivery_date]"
+					value="<?= e($birthOutcomeData['delivery_date'] ?? '') ?>"
+					class="<?= $inputClass('delivery_date') ?>"
+					required>
+			</div>
+			<!-- Delivery mode -->
+			<div>
+				<label
+					for="delivery_mode"
+					class="block text-sm font-medium text-slate-700">
+					Delivery method
+					<span class="text-red-500">*</span>
+				</label>
+				<select name="birthOutcomeData[delivery_mode]"
+				class="<?= $inputClass('delivery_mode') ?>"
+				 required>
+					<option value="">Select delivery mode</option>
+					<option value="Normal Vaginal">Normal vaginal</option>
+					<option value="Caesarean">Caesarean</option>
+					<option value="Assisted">Assisted</option>
+					<option value="Home Delivery">Home delivery</option>
+				</select>
+			</div>
+
+			<!-- Delivery place -->
+			<div>
+				<label
+					for="delivery_place"
+					class="block text-sm font-medium text-slate-700">
+					Delivery place
+				</label>
+				<input
+					type="text"
+					name="birthOutcomeData[delivery_place]"
+					value="<?= e($birthOutcomeData['delivery_place'] ?? '') ?>"
+					class="<?= $inputClass('delivery_place') ?>">
+			</div>
+			<!-- Gestational Age-->
+			<div>
+				<label
+					for="gestational_age_weeks"
+					class=" block text-sm font-medium text-slate-700">
+					Gestational Age
+				</label>
+				<input
+					type="number"
+					name="birthOutcomeData[gestational_age_weeks]"
+					id="gestational_age_weeks"
+					min="20"
+					max="45"
+					value="<?= e($birthOutcomeData['gestational_age_weeks'] ?? '') ?>"
+					class="<?= $inputClass('gestational_age_weeks') ?>">
+			</div>
+			<!-- Mother status-->
+			<div>
+				<label
+					for="mother_status"
+					class=" block text-sm font-medium text-slate-700">
+					Mother status
+				</label>
+				<select name="birthOutcomeData[mother_status]"
+				class="<?= $inputClass('mother_status') ?>"
+				required>
+					<option value="Healthy">Healthy</option>
+					<option value="Complication">Complication</option>
+					<option value="Deceased">Deceased</option>
+				</select>
+			</div>
+			<!-- Complications-->
+			<div>
+				<label
+					for="complications"
+					class=" block text-sm font-medium text-slate-700">
+					Complications
+				</label>
+				<textarea name="birthOutcomeData[complications]"
+				class="<?= $inputClass('complications') ?>">
+					<?= e(
+						$birthOutcomeData['complications'] ?? ''
+					) ?></textarea>
+
+			</div>
+			<!-- Notes-->
+			<div>
+				<label
+					for="notes"
+					class=" block text-sm font-medium text-slate-700">
+					Mother status
+				</label>
+				<textarea name="birthOutcomeData[notes]"
+				class="<?= $inputClass('notes') ?>">
+					<?= e(
+						$birthOutcomeData['notes'] ?? ''
+					) ?></textarea>
 			</div>
 
 			<!-- Breastfeeding -->
@@ -539,25 +614,6 @@ $selectedBirthOutcomeId = (int) $childValue('birth_outcome_id', 0);
 				<?php $fieldError('head_circumference_cm'); ?>
 			</div>
 
-			<!-- Complications -->
-			<div class="sm:col-span-2 xl:col-span-3">
-				<label
-					for="neonatal_complications"
-					class="block text-sm font-medium text-slate-700">
-					Neonatal complications
-				</label>
-
-				<textarea
-					id="neonatal_complications"
-					name="childData[neonatal_complications]"
-					rows="4"
-					placeholder="Describe any neonatal complications..."
-					class="<?= $inputClass('neonatal_complications') ?>"><?= e((string) $childValue(
-																				'neonatal_complications'
-																			)) ?></textarea>
-
-				<?php $fieldError('neonatal_complications'); ?>
-			</div>
 		</div>
 	</section>
 
@@ -575,7 +631,7 @@ $selectedBirthOutcomeId = (int) $childValue('birth_outcome_id', 0);
 
 		<button
 			type="submit"
-			<?= empty($families) ? 'disabled' : '' ?>
+			<?= empty($pregnancies) ? 'disabled' : '' ?>
 			class="inline-flex items-center justify-center rounded-lg
                    bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white
                    hover:bg-blue-700 focus:outline-none focus:ring-2
